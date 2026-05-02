@@ -1,0 +1,9 @@
+timestamp,source,eventType,severity,userName,sourceIp,httpStatus,message
+2026-04-24T09:00:00Z,auth-service,AUTH_FAILURE,WARNING,admin,192.168.1.100,401,Intento fallido de login
+2026-04-24T09:00:10Z,auth-service,AUTH_FAILURE,WARNING,admin,192.168.1.100,401,Intento fallido de login
+2026-04-24T09:00:20Z,auth-service,AUTH_FAILURE,WARNING,admin,192.168.1.100,401,Intento fallido de login
+2026-04-24T09:01:00Z,web-server,HTTP_REQUEST,INFO,,192.168.1.50,200,GET /index.html - OK
+2026-04-24T09:02:00Z,web-server,HTTP_REQUEST,WARNING,,10.0.0.99,404,GET /wp-admin - Not Found
+2026-04-24T09:03:00Z,api-gateway,HTTP_REQUEST,ERROR,,172.16.0.5,503,Service Unavailable
+2026-04-24T09:04:00Z,auth-service,AUTH_SUCCESS,INFO,jperez,192.168.1.30,200,Login exitoso
+2026-04-24T09:05:00Z,file-service,FILE_ACCESS,INFO,jperez,192.168.1.30,200,Acceso a documento

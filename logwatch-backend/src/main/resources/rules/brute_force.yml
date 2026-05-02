@@ -1,0 +1,8 @@
+match:
+  eventType: AUTH_FAILURE
+  httpStatus: [401, 403]
+groupBy: ip
+windowSeconds: 300
+threshold: 10
+cooldownSeconds: 600
+description: "Mas de 10 fallos de login desde la misma IP en 5 minutos"

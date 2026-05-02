@@ -1,0 +1,97 @@
+[
+  {
+    "timestamp": "2026-04-24T10:00:00Z",
+    "source": "auth-service",
+    "eventType": "AUTH_FAILURE",
+    "severity": "WARNING",
+    "userName": "admin",
+    "sourceIp": "192.168.1.100",
+    "httpStatus": 401,
+    "message": "Intento fallido de autenticacion para usuario admin"
+  },
+  {
+    "timestamp": "2026-04-24T10:00:15Z",
+    "source": "auth-service",
+    "eventType": "AUTH_FAILURE",
+    "severity": "WARNING",
+    "userName": "admin",
+    "sourceIp": "192.168.1.100",
+    "httpStatus": 401,
+    "message": "Intento fallido de autenticacion para usuario admin"
+  },
+  {
+    "timestamp": "2026-04-24T10:00:30Z",
+    "source": "auth-service",
+    "eventType": "AUTH_SUCCESS",
+    "severity": "INFO",
+    "userName": "admin",
+    "sourceIp": "192.168.1.50",
+    "httpStatus": 200,
+    "message": "Autenticacion exitosa para usuario admin"
+  },
+  {
+    "timestamp": "2026-04-24T10:01:00Z",
+    "source": "web-server",
+    "eventType": "HTTP_REQUEST",
+    "severity": "WARNING",
+    "sourceIp": "10.0.0.55",
+    "httpStatus": 404,
+    "message": "GET /admin/config - Not Found"
+  },
+  {
+    "timestamp": "2026-04-24T10:01:10Z",
+    "source": "web-server",
+    "eventType": "HTTP_REQUEST",
+    "severity": "WARNING",
+    "sourceIp": "10.0.0.55",
+    "httpStatus": 404,
+    "message": "GET /admin/users - Not Found"
+  },
+  {
+    "timestamp": "2026-04-24T10:02:00Z",
+    "source": "api-gateway",
+    "eventType": "HTTP_REQUEST",
+    "severity": "ERROR",
+    "sourceIp": "172.16.0.10",
+    "httpStatus": 500,
+    "message": "Internal Server Error en /api/orders"
+  },
+  {
+    "timestamp": "2026-04-24T10:02:05Z",
+    "source": "api-gateway",
+    "eventType": "HTTP_REQUEST",
+    "severity": "ERROR",
+    "sourceIp": "172.16.0.11",
+    "httpStatus": 502,
+    "message": "Bad Gateway en /api/payments"
+  },
+  {
+    "timestamp": "2026-04-24T10:03:00Z",
+    "source": "auth-service",
+    "eventType": "AUTH_FAILURE",
+    "severity": "WARNING",
+    "userName": "root",
+    "sourceIp": "192.168.1.200",
+    "httpStatus": 403,
+    "message": "Acceso denegado para usuario root"
+  },
+  {
+    "timestamp": "2026-04-24T10:04:00Z",
+    "source": "file-service",
+    "eventType": "FILE_ACCESS",
+    "severity": "INFO",
+    "userName": "jperez",
+    "sourceIp": "192.168.1.30",
+    "httpStatus": 200,
+    "message": "Descarga de fichero: informe_q1.pdf"
+  },
+  {
+    "timestamp": "2026-04-24T10:05:00Z",
+    "source": "db-service",
+    "eventType": "DB_ERROR",
+    "severity": "CRITICAL",
+    "sourceIp": "10.0.1.5",
+    "httpStatus": 500,
+    "message": "Connection pool exhausted - no available connections"
+  }
+]

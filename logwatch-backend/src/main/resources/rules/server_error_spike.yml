@@ -1,0 +1,8 @@
+match:
+  eventType: HTTP_REQUEST
+  httpStatus: [500, 502, 503, 504]
+groupBy: source
+windowSeconds: 120
+threshold: 20
+cooldownSeconds: 600
+description: "Pico de mas de 20 errores 5xx en el mismo servicio en 2 minutos"

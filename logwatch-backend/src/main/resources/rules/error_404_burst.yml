@@ -1,0 +1,8 @@
+match:
+  eventType: HTTP_REQUEST
+  httpStatus: [404]
+groupBy: ip
+windowSeconds: 60
+threshold: 50
+cooldownSeconds: 300
+description: "Rafaga de mas de 50 errores 404 desde la misma IP en 1 minuto"

@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: logwatch-db
+    environment:
+      POSTGRES_DB: logwatch
+      POSTGRES_USER: logwatch
+      POSTGRES_PASSWORD: logwatch
+    ports:
+      - "5432:5432"
+    volumes:
+      - logwatch-data:/var/lib/postgresql/data
+
+volumes:
+  logwatch-data:
